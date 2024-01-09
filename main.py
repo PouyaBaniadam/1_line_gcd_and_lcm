@@ -1,0 +1,2 @@
+number_1, number_2 = map(int, input("Enter two numbers separated by space: ").split())
+print(f"gcd = {[i for i in range(1, min(number_1, number_2) + 1) if (number_1 / i).is_integer() and (number_2 / i).is_integer()][-1]}\nlcm = {int(number_1 * (number_2 / [i for i in range(1, min(number_1, number_2) + 1) if (number_1 / i).is_integer() and (number_2 / i).is_integer()][-1]))}")
